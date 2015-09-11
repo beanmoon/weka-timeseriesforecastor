@@ -76,6 +76,7 @@ public class WekaForecasterTest extends TestCase {
 
 		boolean success = false;
 		Instances wineInstances = getData("wine_date.arff");
+		System.out.println(wineInstances);
 		weka.test.Regression reg = new weka.test.Regression(this.getClass());
 
 		WekaForecaster forecaster = new WekaForecaster();
