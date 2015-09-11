@@ -76,7 +76,7 @@ public class WekaForecasterTest extends TestCase {
 
 		boolean success = false;
 		Instances wineInstances = getData("wine_date.arff");
-		System.out.println(wineInstances);
+		// System.out.println(wineInstances);
 		weka.test.Regression reg = new weka.test.Regression(this.getClass());
 
 		WekaForecaster forecaster = new WekaForecaster();
@@ -96,16 +96,11 @@ public class WekaForecasterTest extends TestCase {
 			int numStepsToForecast = 12;
 			List<List<NumericPrediction>> forecast = forecaster.forecast(numStepsToForecast, System.out);
 
-			for(List<NumericPrediction> list : forecast){
-				for(NumericPrediction np : list){
-					System.out.println(np.predicted() + "," + np.weight());
-				}
-				System.out.println();
-			}
+			
 			String forecastString = predsToString(forecast, numStepsToForecast);
 			System.out.println(forecastString);
 			success = true;
-			reg.println(forecastString);
+			//reg.println(forecastString);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			String msg = ex.getMessage().toLowerCase();

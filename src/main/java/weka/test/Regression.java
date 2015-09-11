@@ -92,9 +92,11 @@ public class Regression {
     if (theClass == null) {
       throw new NullPointerException();
     }
+    System.out.println(theClass.getName());
     String relative = theClass.getName().replace('.', File.separatorChar) 
       + FILE_EXTENSION;
     m_RefFile = new File(getRoot(), relative);
+    System.out.println(m_RefFile.getAbsolutePath());
     m_Output = new StringBuffer();
   }
 
