@@ -100,7 +100,7 @@ public class WekaForecasterTest extends TestCase {
 			String forecastString = predsToString(forecast, numStepsToForecast);
 			System.out.println(forecastString);
 			success = true;
-			//reg.println(forecastString);
+			reg.println(forecastString);
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			String msg = ex.getMessage().toLowerCase();

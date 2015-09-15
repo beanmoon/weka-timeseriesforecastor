@@ -30,6 +30,7 @@ import java.util.Vector;
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Classifier;
 import weka.classifiers.evaluation.NumericPrediction;
+import weka.classifiers.functions.LinearRegression;
 import weka.classifiers.functions.SMOreg;
 import weka.classifiers.timeseries.core.ConfidenceIntervalForecaster;
 import weka.classifiers.timeseries.core.CustomPeriodicTest;
@@ -73,7 +74,8 @@ public class WekaForecaster extends AbstractForecaster implements TSLagUser, Con
 	protected Instances m_transformedHeader;
 
 	/** The base regression scheme to use */
-	protected Classifier m_forecaster = new SMOreg();
+	// protected Classifier m_forecaster = new SMOreg();
+	protected Classifier m_forecaster = new LinearRegression();
 
 	/** The individual forecasters for each target */
 	protected List<SingleTargetForecaster> m_singleTargetForecasters;
@@ -98,7 +100,7 @@ public class WekaForecaster extends AbstractForecaster implements TSLagUser, Con
 	/** Confidence level to compute confidence limits at */
 	protected double m_confidenceLevel = 0.95;
 
-	/** The lag maker to use */
+	/** The lag maker to use */ 
 	TSLagMaker m_lagMaker = new TSLagMaker();
 
 	/**

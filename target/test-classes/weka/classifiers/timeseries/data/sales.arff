@@ -1,6 +1,6 @@
 @relation item_sales
-@attribute order_counts numeric
-@attribute Date date 'yyyy-MM-dd'
+@attribute order_count numeric
+@attribute Date date yyyy-MM-dd
 
 @data
 1,2015-03-14
