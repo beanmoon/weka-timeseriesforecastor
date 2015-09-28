@@ -1008,6 +1008,7 @@ public class WekaForecaster extends AbstractForecaster implements TSLagUser, Con
 		 * m_missingTimeStampList);
 		 */
 		insts = new Instances(insts);
+		// 根据用户设置的periodicity（如果用户没有设置，则自动检测）对数据进行补齐
 		insts = weka.classifiers.timeseries.core.Utils.replaceMissing(insts, m_fieldsToForecast,
 				m_lagMaker.getTimeStampField(), false, m_lagMaker.getPeriodicity(), m_lagMaker.getSkipEntries(),
 				m_missingTargetList, m_missingTimeStampList, m_missingTimeStampRows);

@@ -2,23 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e888156a-b624-4f36-84c2-6be398acc2ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__gnujaxp_gnujaxp_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_squirrel_sql_thirdparty_non_maven_java_cup_0_11a.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_weka_dev_3_7_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_pentaho_pentaho_commons_pentaho_package_manager_1_0_8.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timeseriesforecasting.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wekarefs/weka/classifiers/timeseries/WekaForecasterTest.ref" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/AbstractForecaster.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/AbstractForecaster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/AbstractTimeSeriesFilter.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/AbstractTimeSeriesFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$10.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$11.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$12.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$13.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$14$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$14$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$14.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$15.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$16.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$17.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$2.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$3.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$4.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$5.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$6.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$7.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$8.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$9.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$AttributeSelectionPanelExtended.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel$AttributeSelectionPanelExtended.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/AdvancedConfigPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/ConfidenceIntervalForecaster.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/ConfidenceIntervalForecaster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$2.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$3.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$4.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$5.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$6.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$7.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicEditor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$2.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$3.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$4.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$5.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$6.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$Operator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$TestPart.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest$TestPart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/CustomPeriodicTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$10.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$11.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$12.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$2.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$3.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$4.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$5.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$6.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$7.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$8.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$9.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/CustomPeriodicTestEditor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/DACModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/DACModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/ErrorBasedConfidenceIntervalEstimator.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/ErrorBasedConfidenceIntervalEstimator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/ErrorModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/ErrorModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$10.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$11.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$12.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$13.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$14.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$15.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$16.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$2.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$3.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$4.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$5.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$6.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$7.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$8.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$9.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$ForecastingThread.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$ForecastingThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$LogPrintStream.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel$LogPrintStream.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/ForecastingPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/graph/GraphDriver.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/graph/GraphDriver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/IncrementallyPrimeable.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/IncrementallyPrimeable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/graph/JFreeChartDriver.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/graph/JFreeChartDriver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/MAEModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/MAEModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/MAPEModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/MAPEModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/MSEModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/MSEModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/OverlayForecaster.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/OverlayForecaster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/RAEModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/RAEModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/RMSEModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/RMSEModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/RRSEModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/RRSEModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/test/Regression.class" afterPath="$PROJECT_DIR$/target/classes/weka/test/Regression.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/weka/classifiers/timeseries/SalesForecasterTest.class" afterPath="$PROJECT_DIR$/target/test-classes/weka/classifiers/timeseries/SalesForecasterTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/SimpleConfigPanel$5.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/SimpleConfigPanel$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/SimpleConfigPanel.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/gui/SimpleConfigPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/TSEvalModule.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/TSEvalModule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/TSEvaluation.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/eval/TSEvaluation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/TSForecaster.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/TSForecaster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagMaker$Periodicity.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagMaker$Periodicity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagMaker$PeriodicityHandler.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagMaker$PeriodicityHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagMaker.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagUser.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TSLagUser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecasting$Status.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecasting$Status.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecasting.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecasting.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingBeanInfo.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingBeanInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$1.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$2.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$3.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$4.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer.class" afterPath="$PROJECT_DIR$/target/classes/weka/gui/beans/TimeSeriesForecastingCustomizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TimeSeriesTranslate.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/TimeSeriesTranslate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/Utils.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/core/Utils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/WekaForecaster$SingleTargetForecaster.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/WekaForecaster$SingleTargetForecaster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/WekaForecaster.class" afterPath="$PROJECT_DIR$/target/classes/weka/classifiers/timeseries/WekaForecaster.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/weka/classifiers/timeseries/WekaForecasterTest.class" afterPath="$PROJECT_DIR$/target/test-classes/weka/classifiers/timeseries/WekaForecasterTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/weka/test/WekaTestSuite.class" afterPath="$PROJECT_DIR$/target/classes/weka/test/WekaTestSuite.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/SalesForecasterTest.java" afterPath="$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/SalesForecasterTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/SimpleConfigPanel.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/SimpleConfigPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/eval/TSEvaluation.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/eval/TSEvaluation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/core/TSLagMaker.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/core/TSLagMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/core/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/core/Utils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/WekaForecaster.java" afterPath="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/WekaForecaster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/WekaForecasterTest.java" afterPath="$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/WekaForecasterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/data/sales.arff" afterPath="$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/data/sales.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timeseriesforecasting.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,23 +139,48 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="timeseriesforecasting" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ForecastingPanel.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ForecastingPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.053097345" vertical-offset="0" max-vertical-offset="20310">
-              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-0.5761317">
+              <caret line="1136" column="63" selection-start-line="1136" selection-start-column="63" selection-end-line="1136" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WekaForecasterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/WekaForecasterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Instances.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.7.12/weka-dev-3.7.12-sources.jar!/weka/core/Instances.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="261" column="28" selection-start-line="261" selection-start-column="28" selection-end-line="261" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdvancedConfigPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,17 +195,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="867" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -100,6 +248,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -118,144 +267,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseriesforecasting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-timeseriesforecasting-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseriesforecasting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-timeseriesforecasting-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseriesforecasting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-timeseriesforecasting-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseriesforecasting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-timeseriesforecasting-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseriesforecasting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka-timeseriesforecasting-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeseries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -270,8 +281,18 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.ForecastingPanel">
+  <component name="RunManager" selected="Application.WekaForecasterTest">
     <configuration default="false" name="ForecastingPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="weka.classifiers.timeseries.gui.ForecastingPanel" />
       <option name="VM_PARAMETERS" value="" />
@@ -288,38 +309,27 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="false" name="WekaForecasterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="weka.classifiers.timeseries.WekaForecasterTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="timeseriesforecasting" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
+      <module />
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -336,38 +346,26 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.ForecastingPanel" />
+      <item index="1" class="java.lang.String" itemvalue="Application.WekaForecasterTest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.ForecastingPanel" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.WekaForecasterTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ForecastingPanel" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
@@ -391,37 +389,55 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SliceManager">
-    <option name="analysisUIOptions">
-      <AnalysisUIOptions />
-    </option>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="867" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1881259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2082777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20600858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22174536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3205298" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271523" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -436,25 +452,229 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.053097345" vertical-offset="0" max-vertical-offset="20310">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1136" column="63" selection-start-line="1136" selection-start-column="63" selection-end-line="1136" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/WekaForecasterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.7.12/weka-dev-3.7.12-sources.jar!/weka/core/Instances.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1136" column="63" selection-start-line="1136" selection-start-column="63" selection-end-line="1136" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/WekaForecasterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.7.12/weka-dev-3.7.12-sources.jar!/weka/core/Instances.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="228" column="53" selection-start-line="228" selection-start-column="53" selection-end-line="228" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/core/OverlayForecaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36283186">
+          <caret line="78" column="10" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/AdvancedConfigPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="340" column="5" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/weka/classifiers/timeseries/WekaForecasterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="27" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wekarefs/weka/classifiers/timeseries/WekaForecasterTest.ref">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-dev/3.7.12/weka-dev-3.7.12-sources.jar!/weka/core/Instances.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="261" column="28" selection-start-line="261" selection-start-column="28" selection-end-line="261" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/weka/classifiers/timeseries/gui/ForecastingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5761317">
+          <caret line="1136" column="63" selection-start-line="1136" selection-start-column="63" selection-end-line="1136" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
   </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>timeseriesforecasting</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: commons-codec:commons-codec:1.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
 </project>
-

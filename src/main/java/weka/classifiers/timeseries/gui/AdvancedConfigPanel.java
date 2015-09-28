@@ -203,7 +203,7 @@ public class AdvancedConfigPanel extends JPanel {
   protected Instances m_evaluationModsHeader;
   
   /** Panel for holding and selecting evaluation modules */
-  protected AttributeSelectionPanel m_evaluationMetrics = 
+  protected AttributeSelectionPanel m_evaluationMetricsPanel = 
     new AttributeSelectionPanel(false, false, false, false);
   
   /** Perform training set evaluation check box */
@@ -734,7 +734,7 @@ public class AdvancedConfigPanel extends JPanel {
     
     JPanel base1 = new JPanel();
     base1.setLayout(new BorderLayout());
-    base1.add(m_evaluationMetrics, BorderLayout.CENTER);
+    base1.add(m_evaluationMetricsPanel, BorderLayout.CENTER);
     List<TSEvalModule> evalModulesL = TSEvalModule.getModuleList();
     ArrayList<Attribute> atts = new ArrayList<Attribute>();
     int numMods = 0;
@@ -746,14 +746,14 @@ public class AdvancedConfigPanel extends JPanel {
     }
     Instances modInsts = new Instances("Eval modules", atts, 1);
     m_evaluationModsHeader = modInsts;
-    m_evaluationMetrics.setInstances(modInsts);
+    m_evaluationMetricsPanel.setInstances(modInsts);
     boolean[] selected = new boolean[numMods];
     selected[0] = true; selected[2] = true;
     try {
-      m_evaluationMetrics.setSelectedAttributes(selected);
+      m_evaluationMetricsPanel.setSelectedAttributes(selected);
     } catch (Exception ex) {}
-    m_evaluationMetrics.setPreferredScrollableViewportSize(new Dimension(260,80));
-    m_evaluationMetrics.setBorder(BorderFactory.createTitledBorder("Metrics"));
+    m_evaluationMetricsPanel.setPreferredScrollableViewportSize(new Dimension(260,80));
+    m_evaluationMetricsPanel.setBorder(BorderFactory.createTitledBorder("Metrics"));
     
     JPanel temp1 = new JPanel();
     temp1.setLayout(new BorderLayout());
@@ -1856,14 +1856,14 @@ public class AdvancedConfigPanel extends JPanel {
     throws Exception {
     
     // eval on training
-    eval.setEvaluateOnTrainingData(m_trainingCheckBox.isSelected());
+     eval.setEvaluateOnTrainingData(m_trainingCheckBox.isSelected());
     
     if (!eval.getEvaluateOnTrainingData() && !eval.getEvaluateOnTestData()) {
       // throw new Exception("Must evaluate")
     }
     
     // evaluation modules
-    int[] selected = m_evaluationMetrics.getSelectedAttributes();
+    int[] selected = m_evaluationMetricsPanel.getSelectedAttributes();
     
     if (selected.length == 0) {
       throw new Exception("Must select at least one evaluation metric.");

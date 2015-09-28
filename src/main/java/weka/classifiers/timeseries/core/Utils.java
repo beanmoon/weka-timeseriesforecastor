@@ -265,7 +265,7 @@ public class Utils {
     Instances result = toReplace;
 
     Attribute timeStampAtt = null;
-    TSLagMaker.PeriodicityHandler detected = null;
+    TSLagMaker.PeriodicityHandler detectedPeriodicityHandler = null;
 
     List<Integer> missingTargetList = null;
     List<Integer> missingTimeStampList = null;
@@ -287,7 +287,7 @@ public class Utils {
 
       // must be a non-artificial time stamp
       if (timeStampAtt != null) {
-        detected = weka.classifiers.timeseries.core.TSLagMaker
+        detectedPeriodicityHandler = weka.classifiers.timeseries.core.TSLagMaker
             .determinePeriodicity(result, timeStampName, userHint);
 
         // check insertMissing (if periodicity is not UNKNOWN)
@@ -295,8 +295,8 @@ public class Utils {
          * If we do this first, then we can interpolate the missing target
          * values that will be created for the rows that get inserted
          */
-        if (detected.getPeriodicity() != Periodicity.UNKNOWN) {
-          insertMissing(toReplace, timeStampAtt, detected, skipEntries,
+        if (detectedPeriodicityHandler.getPeriodicity() != Periodicity.UNKNOWN) {
+          insertMissing(toReplace, timeStampAtt, detectedPeriodicityHandler, skipEntries,
               missingTimeStampRows);
         }
       }
@@ -409,7 +409,7 @@ public class Utils {
 
         if (current.isMissing(attIndex)) {
           if (!weka.core.Utils.isMissingValue(previousNonMissing)) {
-            double newV = advanceSuppliedTimeValue(previousNonMissing, detected);
+            double newV = advanceSuppliedTimeValue(previousNonMissing, detectedPeriodicityHandler);
             current.setValue(attIndex, newV);
             // previousNonMissing = newV;
             if (missingTimeStampList != null) {
@@ -427,7 +427,7 @@ public class Utils {
         if (firstNonMissingIndex > 0) {
           for (int i = firstNonMissingIndex - 1; i >= 0; i--) {
             Instance current = result.instance(i);
-            double newV = decrementSuppliedTimeValue(firstNonMissing, detected);
+            double newV = decrementSuppliedTimeValue(firstNonMissing, detectedPeriodicityHandler);
             current.setValue(attIndex, newV);
             if (missingTimeStampList != null) {
               missingTimeStampList.add(new Integer(i + 1));

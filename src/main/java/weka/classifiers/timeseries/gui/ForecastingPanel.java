@@ -18,54 +18,6 @@
 
 package weka.classifiers.timeseries.gui;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.InputEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.PrintStream;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-import javax.swing.JTabbedPane;
-import javax.swing.JTextArea;
-import javax.swing.JViewport;
-import javax.swing.ListSelectionModel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
-
 import weka.classifiers.timeseries.AbstractForecaster;
 import weka.classifiers.timeseries.TSForecaster;
 import weka.classifiers.timeseries.WekaForecaster;
@@ -78,15 +30,22 @@ import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.Utils;
-import weka.gui.BrowserHelper;
-import weka.gui.LogPanel;
-import weka.gui.Logger;
-import weka.gui.ResultHistoryPanel;
-import weka.gui.TaskLogger;
-import weka.gui.WekaTaskMonitor;
+import weka.gui.*;
 import weka.gui.beans.KnowledgeFlowApp;
 import weka.gui.beans.TimeSeriesForecasting;
 import weka.gui.beans.TimeSeriesForecastingKFPerspective;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.table.TableModel;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Main GUI panel for the forecasting environment.
@@ -121,7 +80,7 @@ public class ForecastingPanel extends JPanel {
 	protected JTextArea m_outText = new JTextArea(20, 50);
 
 	/** A panel holding and controlling the results for viewing */
-	protected ResultHistoryPanel m_history = new ResultHistoryPanel(m_outText);
+	protected ResultHistoryPanel m_resultHistoryPanel = new ResultHistoryPanel(m_outText);
 
 	/** Button to launch the forecaster */
 	protected JButton m_startBut = new JButton("Start");
@@ -166,7 +125,9 @@ public class ForecastingPanel extends JPanel {
 		protected boolean m_configAndBuild = true;
 
 		protected WekaForecaster m_threadForecaster = null;
-
+		/**
+		 * m_name 传进来的时候默认为空
+		 * */
 		protected String m_name;
 
 		public ForecastingThread(WekaForecaster forecaster, String name) {
@@ -195,6 +156,7 @@ public class ForecastingPanel extends JPanel {
 			try {
 
 				if (!m_sortedCheck) {
+					// 对导入的数据进行是否有序及是否有丢失数据检查
 					sortCheck();
 				}
 
@@ -204,13 +166,18 @@ public class ForecastingPanel extends JPanel {
 				TSEvaluation eval = new TSEvaluation(inst, m_advancedConfigPanel.getHoldoutSetSize());
 
 				if (m_configAndBuild) {
-					// configure the WekaForecaster with the base learner
+					// configure the WekaForecaster with the base learner,
+					// 也即在高级选项中选择的分类器
 					m_threadForecaster.setBaseForecaster(m_advancedConfigPanel.getBaseClassifier());
+					// 将从m_simpleConfigPanel得到的配置项应用到m_threadForecaster
 					m_simpleConfigPanel.applyToForecaster(m_threadForecaster);
+					// 将从m_advancedConfigPanel得到的配置项应用到m_threadForecaster
 					m_advancedConfigPanel.applyToForecaster(m_threadForecaster);
 				}
 
+				// 从m_simpleConfigPanel面板得到需要预测多少步的步数
 				m_simpleConfigPanel.applyToEvaluation(eval, m_threadForecaster);
+				// 从m_advancedConfigPanel面板得到需要用到的evaluationMetrics以及是否要
 				m_advancedConfigPanel.applyToEvaluation(eval, m_threadForecaster);
 
 				eval.setForecastFuture(m_advancedConfigPanel.getOutputFuturePredictions()
@@ -268,7 +235,7 @@ public class ForecastingPanel extends JPanel {
 				if (m_name == null) {
 					outBuff.append("=== Run information ===\n\n");
 				} else {
-					outBuff = m_history.getNamedBuffer(name);
+					outBuff = m_resultHistoryPanel.getNamedBuffer(name);
 					outBuff.append("\n=== Model re-evaluation===\n\n");
 				}
 
@@ -290,9 +257,9 @@ public class ForecastingPanel extends JPanel {
 				}
 
 				if (m_configAndBuild) {
-					m_history.addResult(name, outBuff);
+					m_resultHistoryPanel.addResult(name, outBuff);
 				}
-				m_history.setSingle(name);
+				m_resultHistoryPanel.setSingle(name);
 
 				if (m_log != null) {
 					m_log.logMessage("Started " + fname);
@@ -308,7 +275,7 @@ public class ForecastingPanel extends JPanel {
 				if (m_configAndBuild) {
 					m_threadForecaster.buildForecaster(trainInst, logger);
 					outBuff.append("\n" + m_threadForecaster.toString());
-					m_history.updateResult(name);
+					m_resultHistoryPanel.updateResult(name);
 				}
 
 				if (eval.getEvaluateOnTrainingData() || eval.getEvaluateOnTestData()) {
@@ -344,7 +311,7 @@ public class ForecastingPanel extends JPanel {
 								targetName, step, instanceNumOffset);
 						outBuff.append("\n").append(predString);
 					}
-					m_history.updateResult(name);
+					m_resultHistoryPanel.updateResult(name);
 				}
 
 				// output any future predictions
@@ -362,18 +329,18 @@ public class ForecastingPanel extends JPanel {
 						outBuff.append("\n=== Future predictions from end of test data ===\n");
 						outBuff.append(eval.printFutureTestForecast(m_threadForecaster));
 					}
-					m_history.updateResult(name);
+					m_resultHistoryPanel.updateResult(name);
 				}
 
 				// evaluation summary
 				if (eval.getEvaluateOnTrainingData() || eval.getEvaluateOnTestData()) {
 					outBuff.append("\n" + eval.toSummaryString());
-					m_history.updateResult(name);
+					m_resultHistoryPanel.updateResult(name);
 				}
 
 				// result object list
-				List<Object> resultList = (m_configAndBuild) ? new ArrayList<Object>() : (List<Object>) m_history
-						.getNamedObject(name);
+				List<Object> resultList = (m_configAndBuild) ? new ArrayList<Object>()
+						: (List<Object>) m_resultHistoryPanel.getNamedObject(name);
 
 				if (!m_configAndBuild) {
 					// go through and remove any JPanels
@@ -517,7 +484,7 @@ public class ForecastingPanel extends JPanel {
 					resultList.add(graphList);
 				}
 
-				m_history.addObject(name, resultList);
+				m_resultHistoryPanel.addObject(name, resultList);
 				if (graphList.size() > 0) {
 					updateMainTabs(name);
 				}
@@ -637,8 +604,8 @@ public class ForecastingPanel extends JPanel {
 
 		m_outputPane.addTab("Output", null, js, "Forecaster output");
 
-		m_history.setBorder(BorderFactory.createTitledBorder("Result list"));
-		m_history.getList().getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+		m_resultHistoryPanel.setBorder(BorderFactory.createTitledBorder("Result list"));
+		m_resultHistoryPanel.getList().getSelectionModel().addListSelectionListener(new ListSelectionListener() {
 			public void valueChanged(ListSelectionEvent e) {
 
 				synchronized (ForecastingPanel.this) {
@@ -646,7 +613,7 @@ public class ForecastingPanel extends JPanel {
 						ListSelectionModel lm = (ListSelectionModel) e.getSource();
 						for (int j = e.getFirstIndex(); j <= e.getLastIndex(); j++) {
 							if (lm.isSelectedIndex(j)) {
-								String name = m_history.getSelectedName();
+								String name = m_resultHistoryPanel.getSelectedName();
 								updateMainTabs(name);
 							}
 						}
@@ -655,12 +622,12 @@ public class ForecastingPanel extends JPanel {
 			}
 		});
 
-		m_history.getList().addMouseListener(new MouseAdapter() {
+		m_resultHistoryPanel.getList().addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
 				if (((e.getModifiers() & InputEvent.BUTTON1_MASK) != InputEvent.BUTTON1_MASK) || e.isAltDown()) {
-					int index = m_history.getList().locationToIndex(e.getPoint());
+					int index = m_resultHistoryPanel.getList().locationToIndex(e.getPoint());
 					if (index != -1) {
-						String name = m_history.getNameAtIndex(index);
+						String name = m_resultHistoryPanel.getNameAtIndex(index);
 						resultPopup(name, e.getX(), e.getY());
 					} else {
 						resultPopup(null, e.getX(), e.getY());
@@ -669,7 +636,7 @@ public class ForecastingPanel extends JPanel {
 			}
 		});
 
-		m_history.setHandleRightClicks(false);
+		m_resultHistoryPanel.setHandleRightClicks(false);
 
 		// add(m_configPane, BorderLayout.NORTH);
 
@@ -677,7 +644,7 @@ public class ForecastingPanel extends JPanel {
 		lowerPanel.setLayout(new BorderLayout());
 		JPanel butAndHistHolder = new JPanel();
 		butAndHistHolder.setLayout(new BorderLayout());
-		butAndHistHolder.add(m_history, BorderLayout.CENTER);
+		butAndHistHolder.add(m_resultHistoryPanel, BorderLayout.CENTER);
 		JPanel butHolder = new JPanel();
 		butHolder.setLayout(new GridLayout(1, 3));
 		butHolder.add(m_startBut);
@@ -717,10 +684,10 @@ public class ForecastingPanel extends JPanel {
 			add((JComponent) m_log, BorderLayout.SOUTH);
 		}
 
-		double width = m_history.getPreferredSize().width;
-		int height = m_history.getPreferredSize().height;
+		double width = m_resultHistoryPanel.getPreferredSize().width;
+		int height = m_resultHistoryPanel.getPreferredSize().height;
 		width *= 0.75;
-		m_history.setPreferredSize(new Dimension((int) width, height));
+		m_resultHistoryPanel.setPreferredSize(new Dimension((int) width, height));
 
 		m_startBut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -749,7 +716,7 @@ public class ForecastingPanel extends JPanel {
 	 *            the name of the result from the history list to use
 	 */
 	protected void openResultFrame(String name) {
-		StringBuffer buffer = m_history.getNamedBuffer(name);
+		StringBuffer buffer = m_resultHistoryPanel.getNamedBuffer(name);
 		JTabbedPane tabbedPane = m_framedOutputMap.get(name);
 
 		if (buffer != null && tabbedPane == null) {
@@ -796,7 +763,7 @@ public class ForecastingPanel extends JPanel {
 		if (selectedName != null) {
 			showMainBuff.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					m_history.setSingle(selectedName);
+					m_resultHistoryPanel.setSingle(selectedName);
 					updateMainTabs(selectedName);
 				}
 			});
@@ -821,7 +788,7 @@ public class ForecastingPanel extends JPanel {
 		if (selectedName != null && m_runThread == null) {
 			deleteResultBuff.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					m_history.removeResult(selectedName);
+					m_resultHistoryPanel.removeResult(selectedName);
 				}
 			});
 		} else {
@@ -833,7 +800,7 @@ public class ForecastingPanel extends JPanel {
 		resultListMenu.addSeparator();
 		List<Object> resultList = null;
 		if (selectedName != null) {
-			resultList = (List<Object>) m_history.getNamedObject(name);
+			resultList = (List<Object>) m_resultHistoryPanel.getNamedObject(name);
 		}
 
 		WekaForecaster saveForecaster = null;
@@ -908,7 +875,7 @@ public class ForecastingPanel extends JPanel {
 
 		resultListMenu.add(reevaluateModelItem);
 
-		resultListMenu.show(m_history.getList(), x, y);
+		resultListMenu.show(m_resultHistoryPanel.getList(), x, y);
 	}
 
 	/**
@@ -977,13 +944,13 @@ public class ForecastingPanel extends JPanel {
 
 				outBuff.append(wf.toString());
 
-				m_history.addResult(name, outBuff);
-				m_history.setSingle(name);
+				m_resultHistoryPanel.addResult(name, outBuff);
+				m_resultHistoryPanel.setSingle(name);
 
 				List<Object> resultList = new ArrayList<Object>();
 				resultList.add(wf);
 				resultList.add(header);
-				m_history.addObject(name, resultList);
+				m_resultHistoryPanel.addObject(name, resultList);
 				updateMainTabs(name);
 			}
 		}
@@ -1053,7 +1020,7 @@ public class ForecastingPanel extends JPanel {
 		}
 
 		// see if there are any graphs associated with this name
-		List<Object> storedResults = (List<Object>) m_history.getNamedObject(name);
+		List<Object> storedResults = (List<Object>) m_resultHistoryPanel.getNamedObject(name);
 		List<JPanel> graphList = null;
 		if (storedResults != null) {
 			for (Object o : storedResults) {
@@ -1080,7 +1047,7 @@ public class ForecastingPanel extends JPanel {
 	 *            done.
 	 */
 	protected synchronized void updateMainTabs(String entryName) {
-		String name = m_history.getSelectedName();
+		String name = m_resultHistoryPanel.getSelectedName();
 		if (!name.equals(entryName)) {
 			return;
 		}

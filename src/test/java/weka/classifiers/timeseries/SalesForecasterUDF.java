@@ -35,8 +35,11 @@ import junit.framework.TestSuite;
  *
  * @author Mark Hall (mhall{[at]}pentaho{[dot]}com)
  */
-public class SalesForecasterTest  {
+public class SalesForecasterUDF extends TestCase {
 
+	public SalesForecasterUDF(String name) {
+		super(name);
+	}
 
 	private String predsToString(List<List<NumericPrediction>> preds, int steps) {
 		StringBuffer b = new StringBuffer();
@@ -107,11 +110,27 @@ public class SalesForecasterTest  {
 			}
 		}
 
-		
+		if (!success) {
+			fail("Problem during regression testing: no successful predictions generated");
+		}
+
+		try {
+			String diff = reg.diff();
+			if (diff == null) {
+				System.err.println("Warning: No reference available, creating.");
+			} else if (!diff.equals("")) {
+				fail("Regression test failed. Difference:\n" + diff);
+			}
+		} catch (IOException ex) {
+			fail("Problem during regression testing.\n" + ex);
+		}
 	}
 
+	public static Test suite() {
+		return new TestSuite(weka.classifiers.timeseries.SalesForecasterUDF.class);
+	}
 
 	public static void main(String[] args) {
-	
+		junit.textui.TestRunner.run(suite());
 	}
 }

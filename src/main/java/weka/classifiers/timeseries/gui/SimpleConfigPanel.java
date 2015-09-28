@@ -774,6 +774,7 @@ public class SimpleConfigPanel extends JPanel {
    */
   public void applyToEvaluation(TSEvaluation eval, WekaForecaster forecaster)
       throws Exception {
+	  // m_horizonSpinner就是“Number of time units to forecast”面板中取得的配置项
     int horizon = ((SpinnerNumberModel) m_horizonSpinner.getModel())
         .getNumber().intValue();
     if (horizon < 1) {
